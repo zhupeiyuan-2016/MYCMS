@@ -11,7 +11,7 @@
 
 <script>
 export default {
-    name:'fooder',
+    name:'Fooder',
     data:function(){
        return{
          beian:'Copyright © 2018-2022 jiumi.cn Inc. All rights reserved. 渝ICP备xxxx1号-3'

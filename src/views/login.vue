@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      is=loginBackground
+      is=LoginBackground
     >
     </div>
   </div>
@@ -9,12 +9,12 @@
 
 <script>
 // @ is an alias to /src
-import loginBackground from '@/components/login/loginBackground.vue'
+import LoginBackground from '@/components/login/loginBackground.vue'
 
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
-    loginBackground
+    LoginBackground
   }
 }
 </script>
