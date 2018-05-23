@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import login from './views/login.vue'
 import index from './views/index.vue'
 import main from './components/page/main.vue'
-import onetitle from './components/page/onetitle.vue'
+import setup from './components/page/setup.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -19,9 +19,9 @@ export default new Router({
           component:main
         },
         {
-          path:'/onetitle',
-          name:'onetitle',
-          component:onetitle
+          path:'/setup',
+          name:'setup',
+          component:setup
         }
       ]
       // children: {
