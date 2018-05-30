@@ -4,6 +4,7 @@ import login from './views/login.vue'
 import index from './views/index.vue'
 import main from './components/page/main.vue'
 import setup from './components/page/setup.vue'
+import basesetup from './components/page/setup/base.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -24,14 +25,16 @@ export default new Router({
           component:setup
         }
       ]
-      // children: {
-      //    children: 
-      // }
     },
     {
       path: '/login',
       name: 'login',
       component: login
+    },
+    {
+      path:'/base',
+      name:'base',
+      component:basesetup
     }
   ]
 })

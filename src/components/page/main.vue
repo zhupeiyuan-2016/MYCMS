@@ -53,6 +53,9 @@ li {
           <h1 class="title">管理人员列表</h1>
           <Table  stripe :columns="columns1" :data="data1"></Table>
         </Card>
+        <div v-on:click="routera">
+          dianji
+        </div>
       </Col>
     </Row> 
   </div>
@@ -108,6 +111,11 @@ export default {
                         time: '2017-9-9 9:10',
                         permissions: ['第二个栏目']
                     }]
+    }
+  },
+  methods:{
+    routera:function (e) {
+      router.push('/')
     }
   }
 }
