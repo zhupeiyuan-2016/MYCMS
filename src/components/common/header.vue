@@ -4,6 +4,7 @@
   background: #f5f7f9;
   position: relative;
   border-radius: 4px;
+
   /* overflow: hidden; */
 }
 .title {
@@ -15,7 +16,7 @@
   clear: both;
 }
 .layout-nav {
-  height: 300px;
+  height: 100px;
   font-size: 18px;
   float: right;
   margin: 4px;

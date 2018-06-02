@@ -101,7 +101,11 @@
          <FormItem label="网站描述:">
             <Input type="textarea" :rows="4" placeholder="Enter something..." class="input"></Input>
         </FormItem>
+        <FormItem label="备案号:">
+            <Input class="input"></Input>
+        </FormItem>
     </Form>
+    
     <Button type="success" size="large" class="btn">确定</Button>
     <Button type="primary" size="large" class="btn">恢复</Button>
 </div>
