@@ -1,13 +1,12 @@
 <style scoped>
-  .box{
-    height: 80vh;
-  }
+
 </style>
 
 <template>
-<div class="box">
-<Layout>
+<div >
+<Layout >
   <Content :style="{float:'right',padding: '24px', minHeight: '280px', background: '#fff'}">
+           
     <slot></slot>    
   </Content>
 </Layout>
@@ -20,7 +19,7 @@ export default {
   name:'MyContent',
   data:function () {
     return{
-      content:'内容'
+      content:'容器¹'
     }
   }
 }

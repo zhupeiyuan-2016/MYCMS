@@ -1,16 +1,19 @@
 <style scoped>
 .box{
   float: left;
-  width: 200px;
-  height: 80vh;
+}
+.index{
+  z-index: 800;
 }
 </style>
 
 <template>
-<div class="box">
+<div class="box" >
  <Layout >
-      <Sider  :collapsed-width="78" v-model="isCollapsed" style="{height: '80vh'}">
-                <Menu active-name="1-2" theme="light" width="auto" :class="menuitemClasses">
+               <Sider  :collapsed-width="78" class="index" >
+      <!-- <Sider  :collapsed-width="78" v-model="isCollapsed" style="{height: '80vh'}"> -->
+                      <Menu active-name="1-2" theme="light" width="auto" >
+                <!-- <Menu active-name="1-2" theme="light" width="auto" :class="menuitemClasses"> -->
                        <Submenu name="1">
                             <template slot="title">
                                 <Icon type="ios-navigate"></Icon>
@@ -23,14 +26,14 @@
                         </Submenu>
                         <Submenu name="2">
                             <template slot="title">
-                                <Icon type="ios-keypad"></Icon>
-                                Item 2
+                               <Icon type="edit"></Icon>
+                                编辑
                             </template>
                             <MenuItem name="2-1">
-                               <router-link to="./onetitle" :style="{color: '#495060'}">第一个</router-link>
+                               <router-link to="./writepost" :style="{color: '#495060'}">添加文章</router-link>
                             </MenuItem>
                             <MenuItem name="2-2">
-                              <router-link to="./onetitle" :style="{color: '#495060'}">第一个</router-link></MenuItem>
+                              <router-link to="./write" :style="{color: '#495060'}">工作流</router-link></MenuItem>
                             <MenuItem name="2-3">Option 3</MenuItem>
                         </Submenu>
                 </Menu>
@@ -44,17 +47,11 @@ export default {
   name:'MySider',
   data:function(){
     return{
-      name:'hello',
-      isCollapsed: false
+      name:'hello'
     }
   },
   computed:{
-    menuitemClasses: function () {
-        return [
-            'menu-item',
-            this.isCollapsed ? 'collapsed-menu' : ''
-        ]
-    }
+   
   }
 }
 </script>

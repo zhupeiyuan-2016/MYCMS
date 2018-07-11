@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout >
     <Footer>
       <center>
         <span>前台首页|关于我们</span> 

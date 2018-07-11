@@ -4,13 +4,14 @@
   background: #f5f7f9;
   position: relative;
   border-radius: 4px;
-
+  z-index: 800;
   /* overflow: hidden; */
 }
 .title {
   color: white;
   font-size: 12px;
   float: left;
+
 }
 .title::after{
   clear: both;

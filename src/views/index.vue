@@ -7,7 +7,6 @@
     <div
       is="Sider"
       >     
-     
     </div>
     <div
     is="Content"

@@ -31,8 +31,8 @@ export default {
   name:'Setup',
   components:{
     Setupbase,
-     Setupshow,
-     Setupmore
+    Setupshow,
+    Setupmore
   },
   data:function(){
     return {msg:'设置'}
